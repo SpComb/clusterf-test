@@ -39,6 +39,7 @@ func main() {
 
 	flag.StringVar(&options.host, "listen-host", "0.0.0.0", "Listen host")
 	flag.StringVar(&options.port, "listen-port", "1337", "Listen port")
+	flag.Parse()
 
 	var addr = net.JoinHostPort(options.host, options.port)
 
